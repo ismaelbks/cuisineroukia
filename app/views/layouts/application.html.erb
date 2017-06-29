@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myproject</title>
+  	<meta charset="utf-8" />
+    <title><%= @title %> </title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+	<!-- Header -->
+  	<header id="header" class="alt darkened">
+		<a href="/"><%= image_tag "Logo-Cusine-de-roukia-traiteur-et-marocaine-de-tradition.png", class:"logoh", alt:"Logo horizontal orange sahara de la cuisine de roukia, traiteur de qualité à Bordeaux et en gironde" %>
+		<a href="#nav"><span id="menuhead">Menu</span></a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="links">
+			<li><a href="/">Accueil</a>
+			<li><a href="/offre-traiteur/">Nos Propositions</a>
+				<li><a href="/offre-traiteur/plats-froids">&emsp;<span class="indent-mob">&emsp;Entrée & </span>Plats froids</a>
+				<li><a href="/offre-traiteur/couscous-royal"><span class="indent-mob">&emsp;</span>&emsp;Couscous royal</a>
+				<li><a href="/offre-traiteur/mechoui"><span class="indent-mob">&emsp;</span>&emsp;Méchoui Caïdal</a>
+				<li><a href="/offre-traiteur/pastilla"><span class="indent-mob">&emsp;</span>&emsp;Pastilla marocaine</a>	
+				<li><a href="/offre-traiteur/tajine"><span class="indent-mob">&emsp;</span>&emsp;Tajines marocains</a>	
+				<li><a href="/offre-traiteur/plats-de-fete"><span class="indent-mob">&emsp;</span>&emsp;Plats de fête</a>
+				<li><a href="/offre-traiteur/patisseries-marocaines"><span class="indent-mob">&emsp;</span>&emsp;Patisseries & Thé</a>
+			<li><a href="/questions-frequentes">Questions fréquentes</a>
+			<li><a href="/contact">Contact</a>
+		</ul>
+	</nav>
+
     <%= yield %>
+
   </body>
 </html>
+
+
+
+
+
+
+

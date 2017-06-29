@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+//= require util.js
+//= require main.js
+//= require jquery.min.js
+//= require qf.js
+//= require skel.min.js
+//= require particles.js
