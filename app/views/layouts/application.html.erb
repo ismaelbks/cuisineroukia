@@ -4,9 +4,11 @@
   	<meta charset="utf-8" />
     <title><%= @title %> </title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %>
+	<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700">-->
+
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
   </head>
 
 
@@ -35,6 +37,31 @@
 	</nav>
 
     <%= yield %>
+
+
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-facebook">
+					<span class="label">Facebook</span>
+				</a></li>
+				<li><a href="#" class="icon fa-twitter">
+					<span class="label">Twitter</span>
+				</a></li>
+				<li><a href="#" class="icon fa-instagram">
+					<span class="label">Instagram</span>
+				</a></li>
+				<li><a href="#" class="icon fa-linkedin">
+					<span class="label">LinkedIn</span>
+				</a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; La Cuisine de Roukia</li>
+			</ul>
+		</div>
+	</footer>
 
   </body>
 </html>

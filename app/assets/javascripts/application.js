@@ -11,12 +11,13 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
+//= require jquery.min
+//= require particles
+//= require app
+//= require main
+//= require util
+//= require skel.min
+//= require jquery.turbolinks
 //= require_tree .
+//= require turbolinks
 
-//= require util.js
-//= require main.js
-//= require jquery.min.js
-//= require qf.js
-//= require skel.min.js
-//= require particles.js
