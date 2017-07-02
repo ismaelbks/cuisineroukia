@@ -1,21 +1,39 @@
 class PagesController < ApplicationController
-	def show
-		if valid_page?
-			render template: "pages/#{params[:page]}"
-		else
-			render file: "public/404.html", status: :not_found
-		end
-    end
 
     def home
     	@title = "Cuisine de Roukia | Traiteur & Cuisine marocaine de tradition"
     end
 
-    private
-    
-    def valid_page?
-    	File.exist?(Pathname.new(Rails.root + "app/views/pages/#{params[:page]}.html.erb"))
+    def mechoui
     end
 
+    def pastilla
+    end
+
+    def couscous_royal
+    end
+
+    def patisseries_marocaines
+    end
+
+    def plats_de_fete
+    end
+
+    def plats_froids
+    end
+
+    def tajine
+    end
+
+    def contact
+    end
+
+    def questions_frequentes
+    end
+
+
+
+    private
+    
 
 end

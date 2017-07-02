@@ -23,14 +23,15 @@
 	<nav id="nav">
 		<ul class="links">
 			<li><a href="/">Accueil</a>
-			<li><a href="/offre-traiteur/">Nos Propositions</a>
-				<li><a href="/offre-traiteur/plats-froids">&emsp;<span class="indent-mob">&emsp;Entrée & </span>Plats froids</a>
-				<li><a href="/offre-traiteur/couscous-royal"><span class="indent-mob">&emsp;</span>&emsp;Couscous royal</a>
-				<li><a href="/offre-traiteur/mechoui"><span class="indent-mob">&emsp;</span>&emsp;Méchoui Caïdal</a>
-				<li><a href="/offre-traiteur/pastilla"><span class="indent-mob">&emsp;</span>&emsp;Pastilla marocaine</a>	
-				<li><a href="/offre-traiteur/tajine"><span class="indent-mob">&emsp;</span>&emsp;Tajines marocains</a>	
-				<li><a href="/offre-traiteur/plats-de-fete"><span class="indent-mob">&emsp;</span>&emsp;Plats de fête</a>
-				<li><a href="/offre-traiteur/patisseries-marocaines"><span class="indent-mob">&emsp;</span>&emsp;Patisseries & Thé</a>
+			<li><%= link_to 'Nos Propositions', offre_traiteur_url %></li>
+				<li><%= link_to '. Entrée & Plats froids', offre_traiteur_plats_froids_url %></li>
+				<li><%= link_to '. Couscous royal', offre_traiteur_couscous_royal_url %></li>
+				<li><%= link_to '. Mechoui Caïdal ', offre_traiteur_mechoui_url %></li>
+				<li><%= link_to '. Pastilla Marocaine', offre_traiteur_pastilla_url %></li>
+				<li><%= link_to '. Tajine Marocain', offre_traiteur_tajine_url %></li>
+				<li><%= link_to '. Plats de Fête', offre_traiteur_plats_de_fete_url %></li>
+				<li><%= link_to '. Patisseries & Thé', offre_traiteur_patisseries_marocaines_url %></li>
+
 			<li><a href="/questions-frequentes">Questions fréquentes</a>
 			<li><a href="/contact">Contact</a>
 		</ul>
@@ -42,6 +43,7 @@
 
 <!-- Footer -->
 	<footer id="footer">
+		<div class="bande-bleue"></div>
 		<div class="inner">
 			<ul class="icons">
 				<li><a href="#" class="icon fa-facebook">
@@ -62,6 +64,15 @@
 			</ul>
 		</div>
 	</footer>
+
+	<!-- Scripts -->
+	<script src="http://www.cuisinederoukia.fr/assets/js/jquery.min.js"></script>
+	<script src="http://www.cuisinederoukia.fr/assets/js/skel.min.js"></script>
+	<script src="http://www.cuisinederoukia.fr/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://www.cuisinederoukia.fr/assets/js/main.js"></script> 
+	<script src="http://www.cuisinederoukia.fr/assets/js/particles.js"></script>
+	<script src="http://www.cuisinederoukia.fr/assets/js/app.js"></script>  
 
   </body>
 </html>

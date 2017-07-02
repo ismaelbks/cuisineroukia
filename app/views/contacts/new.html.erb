@@ -1,0 +1,39 @@
+
+
+  <% if notice %>
+
+    <%= notice %>
+
+  <% end %>
+
+  <br>
+
+  <%= form_for (@contact) do |f| %>
+    <div class="container 75%">
+      <div class="row uniform 50%">
+
+        <div class="6u 12u$(xsmall)">
+          <%= f.text_field :nom, :placeholder => 'Nom' %>
+        </div>
+
+        <div class="6u$ 12u$(xsmall)">
+          <%= f.text_field :email, :placeholder => 'E-mail' %>
+        </div>
+
+        <div class="12u$">
+          <%= f.text_field :telephone, :placeholder => 'Téléphone' %>
+        </div>
+
+        <div class="12u$ 12u$(xsmall)">
+          <%= f.text_area :message, :placeholder => 'Ecrivez votre message' %>
+        </div>
+
+        <ul class="actions">
+          <li><%= f.submit 'Envoyer', :class => 'special' %></li>
+        </ul>
+
+      </div>
+    </div>
+
+  <% end %>
+
