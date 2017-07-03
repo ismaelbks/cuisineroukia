@@ -26,6 +26,7 @@ class PagesController < ApplicationController
     end
 
     def contact
+        
     end
 
     def questions_frequentes

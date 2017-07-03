@@ -3,7 +3,6 @@ Rails.application.routes.draw do
     root 'pages#home'
 
     get '/offre-traiteur', to: 'pages#index'
-    get '/contact', to: 'pages#contact'
     get '/questions-frequentes', to: 'pages#questions_frequentes'
 
   	get '/offre-traiteur/mechoui', to: 'pages#mechoui'
@@ -14,7 +13,6 @@ Rails.application.routes.draw do
   	get '/offre-traiteur/patisseries-marocaines', to: 'pages#patisseries_marocaines'
   	get '/offre-traiteur/couscous-royal', to: 'pages#couscous_royal'
 
-    get '/contacts' => 'contacts#new'
-    post '/contacts' => 'contacts#create'
-    resources :contacts
+    get '/contact', to: 'pages#contact'
+    post '/contact', to: 'contacts#create'
 end

@@ -1,14 +1,18 @@
 class ContactsController < ApplicationController
-
-  def new
-    @contact = Contact.new
-  end
-
-  def create
-    @contact = Contact.new params[:contact]
-
-    Mailer.contact_form(@contact).deliver # Là où toute la magie réside
-    redirect_to root_url, notice: 'Message envoyé avec succès !'
-  end
-
+ 
+  def new
+    @contact = Contact.new
+  end
+ 
+  def create
+    Contact.create contact params[:contact]
+ 
+    if @contact.valid?
+       Mailer.contact_form(@contact).deliver # Je vais expliquer cette ligne juste après...
+       redirect_to new_contact_path, flash: {success: t(:"create.message_has_been_sent")}
+    else
+       render :new
+    end
+  end
+ 
 end
