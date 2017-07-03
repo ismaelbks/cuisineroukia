@@ -31,9 +31,6 @@ class PagesController < ApplicationController
     def questions_frequentes
     end
 
-
-
     private
-    
 
 end
